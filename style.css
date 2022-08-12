@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: url('./Assets/png/Merged\ bar-57.png') no-repeat;
+    align-items: center;
+    background-size: cover;
+    top:0;
+    width: 100%;
+    z-index: 0;
+}
+.navbarLogo{
+    padding-left: 1.5em;
+}
+.navbarList{
+    padding-right: 1.5em; 
+}
+.navbarListLink{
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-right: 1em;
+    font-weight: bold;
+    color: black;
+}
+.Lang{
+    border: 1px solid orange;
+    padding: 0.5em;
+    border-radius:15px ;
+}
+.yellowBar{
+    background-color: rgb(255, 200, 0);
+    top: 80px;
+    width: 100%;
+}
+.Description{
+    padding: 10px;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 114, 115);
+    font-weight: 600;
+    width: 41em;
+    margin: auto;
+    text-align: center;
+}
+.titleHeading{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  .title-question{
+    color: #0d59b6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .symptome{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    padding-bottom: 30px;
+  }
+h5{
+    color: #0d59b6;
+}
