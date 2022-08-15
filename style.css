@@ -1,75 +1,172 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     background: url('./Assets/png/Merged\ bar-57.png') no-repeat;
     align-items: center;
     background-size: cover;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 0;
-}
-.navbarLogo{
-    padding-left: 1.5em;
-}
-.navbarList{
-    padding-right: 1.5em; 
-}
-.navbarListLink{
-    text-decoration: none;
-    font-size: 1.5em;
-    padding-right: 1em;
-    font-weight: bold;
-    color: black;
-}
-.navbarListLink1{
-    text-decoration: none;
-    font-size: 1.5em;
-    padding-right: 1em;
-    font-weight: bold;
-    color: rgb(10, 68, 135);
+} 
+
+.navbarLogo {
+    margin-right: 2px;
+    float: left;
+    width: 5vw;
+    min-width: 30px;
 
 }
-.Lang{
+h5 {
+    color: #0d59b6;
+}
+
+.im {
+    width: 2vw;
+    min-width: 7px;
+
+}
+
+.navbarListLink {
+
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 1em;
+    text-decoration: none;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .navbarListLink {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbarListLink {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .navbarListLink {
+        font-size: 16px;
+    }
+}
+
+.Lang {
     border: 1px solid orange;
-    padding: 0.5em;
-    border-radius:15px ;
+    padding: 0.5vw;
+    border-radius: 15px;
+    margin-right: 7px;
+    color: black;
 }
-.yellowBar{
+
+.yellowBar {
     background-color: rgb(255, 200, 0);
-    top: 80px;
-    width: 100%;
 }
-.Description{
-    padding: 10px;
+
+.Description {
+
     line-height: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(15, 114, 115);
-    font-weight: 600;
-    width: 41em;
+    font-weight: 500;
     margin: auto;
     text-align: center;
+    width: 38em;
+    font-size: small;
 }
-.titleHeading{
+
+.titleHeading {
     text-align: center;
     padding-top: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  .title-question{
+
+.title-question {
     color: #0d59b6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding-bottom: 30px;
-  }
-  .symptome{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-    padding-bottom: 30px;
-  }
-h5{
-    color: #0d59b6;
+    padding-top: 10px;
 }
+
+.symptome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+
+    padding: 30px;
+}
+
+@media only screen and (max-width:1000px) {
+    .symptome {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+        .Description {
+        width: 80%;
+        line-height: 1.5em;
+
+
+    }
+        .yellowBar {
+
+        font-size: larger;
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .symptome {
+        grid-template-columns: repeat(1, 1fr);
+    }
+     .yellowBar {
+        width: 100%;
+        font-size: x-small;
+
+    }
+        .title-question {
+        font-size: small;
+        width: 40%;
+        padding-left: 28%;
+
+    }
+}
+
+
+
+
+@media only screen and (max-width:330px)and (min-width:80px) {
+    .navbar {
+        font-size: x-small;
+
+    }
+
+    .navbarList {
+        width: 100%;
+        font-size: x-small;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+        flex-direction: column;
+    }
+
+    .navbarLogo {
+        margin-right: 2px;
+        float: left;
+        
+
+    }
+}
+
+
+
