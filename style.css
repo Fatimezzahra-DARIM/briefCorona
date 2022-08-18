@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 .navbar {
@@ -11,8 +12,20 @@
     background-size: cover;
     top: 0;
     width: 100%;
-    z-index: 0;
+    /* z-index: 0; */
 } 
+.navBarList ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    list-style: none;
+}
+
+.navBarList li a {
+    /* text-decoration: none; */
+    padding: 1rem;
+    display: block;
+}
 
 .navbarLogo {
     margin-right: 2px;
@@ -23,11 +36,14 @@
 }
 h5 {
     color: #0d59b6;
+    text-align: center;
+    
 }
 
-.im {
+.img {
     width: 2vw;
     min-width: 7px;
+   align-items: center;
 
 }
 
@@ -39,6 +55,51 @@ h5 {
     text-decoration: none;
 
 }
+.toggle-button {
+    position: absolute;
+    top: .75rem; 
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius:10px;
+}
+@media  only screen and ( max-width:400px){
+  .toggle-button {
+    display:flex;
+  }
+  .navBarList{
+    display: none;
+    width:100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .navBarList ul{
+    width:100%;
+    flex-direction: column;
+  }
+  .navBarList li {
+    text-align: center;
+    
+  }
+  .navBarList li a {
+    padding: .5rem 1rem;
+  }
+  .navBarList.active{
+    display: flex;
+}
+}
+
 
 @media only screen and (max-width: 700px) {
     .navbarListLink {
@@ -58,6 +119,7 @@ h5 {
         font-size: 16px;
     }
 }
+
 
 .Lang {
     border: 1px solid orange;
@@ -104,6 +166,7 @@ h5 {
     justify-items: center;
 
     padding: 30px;
+    text-align: center;
 }
 
 @media only screen and (max-width:1000px) {
